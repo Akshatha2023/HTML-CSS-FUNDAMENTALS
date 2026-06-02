@@ -2,6 +2,7 @@
 <html lang="en"> 
   <head>
     <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="style.css">
     <title>The Basic Language of the Web: HTML</title>
   </head>
   <body>
@@ -20,13 +21,13 @@
     <h2>The Basic Language of the Web: HTML</h2>
     <img src="./img/laura-jones.jpg" width="50px" height="50px"/>
     
-    <p>Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027</p>
+    <p id="author">Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027</p>
   </header>
     <img src="./img/post-img.jpg" alt="HTML CODE ON A SCREEN" width="500px" height="200px"/>
-     <p> All modern websites and web applications are built using three</p>
+     <p> All modern websites and web applications are built using three
       <em>fundamental</em>
       technologies: HTML, CSS and JavaScript. These are the languages of the
-      web.
+      web.</p>
     </p>
     <p>
       In this post, let's focus on HTML. We will learn what HTML is all about,
@@ -70,24 +71,24 @@
   </article>
   <aside>
     <h4>Related Posts</h4>
-    <ul>
+    <ul class="related">
       <li>
         <img src="./img/related-1.jpg" width="75" height="75"/>
-        <a href="#">How to learn Web Development<a/>
-          <p>By Jonas Shsddefhbnfejh</p>
+        <a href="#">How to learn Web Development</a>
+          <p class="related-author">By Jonas Shsddefhbnfejh</p>
       </li>
       <li>
         <img src="./img/related-2.jpg" width="75" height="75"/>
-        <a href="#">How to learn Web Development<a/>
-          <p>By Jonas Shsddefhbnfejh</p>
+        <a href="#">How to learn Web Development</a>
+          <p class="related-author">By Jonas Shsddefhbnfejh</p>
       </li>
-       <li>
+      <li>
         <img src="./img/related-3.jpg" width="75" height="75"/>
-        <a href="#">How to learn Web Development<a/>
-          <p>By Jonas Shsddefhbnfejh</p>
-      </li>
+        <a href="#">How to learn Web Development</a>
+        <p class="related-author">By Jonas Shsddefhbnfejh</p>
+      </li> 
     </ul>
   </aside>
-  <footer>Copyright &copy; 2027 by The Code Magazine.</footer>
+  <footer><p id="copyright">Copyright &copy; 2027 by The Code Magazine.</p></footer>
   </body>
 </html>
