@@ -9,3 +9,8 @@ challenge-2
 It is simple Product card which contains basic html code and no css
 
 ................................................
+
+
+commit -2  Concepts of class and ids
+
+This is all about tahname, class and id selectors
