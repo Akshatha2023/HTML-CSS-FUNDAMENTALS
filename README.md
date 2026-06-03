@@ -26,6 +26,24 @@ even pseudo-classes has high priority than normal a styling
 
 commit- 3 Absolute Positioning ,Adding Margin ,padding, width of container,centering page using margin but only horizontally not vertically
 
+Pseudoclasses
+1. State-based pseudo-classes-   These depend on the state or interaction of an element.
+   
+:hover
+:focus
+:active
+:visited
+:link
+
+2. Structural pseudo-classes-     can be applied to  element, class, ID, and universal selectors.
+   
+:first-child
+:last-child
+:nth-child()
+
+This both 1. State-based pseudo-classes and 2. Structural pseudo-classes can be applied to all elements such as link ,button,p etc
+
+In the above first five are the pseudoclasses for link and below are for elements 
 -page reset by , margin: 0; padding: 0;
 -if we use any particular notation(eg: rgba ,hexa) in project try to use same in notation over entire project
 -while centering div we shld always define particular width ,align-items ,justify-content to center .
