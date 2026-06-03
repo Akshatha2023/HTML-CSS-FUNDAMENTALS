@@ -57,3 +57,33 @@ Types of Boxes
 
 Absolute psoitioning-  relative for parent which will be in normal document flow,absolute for child which needs to be make out of the flow ,once its out of flow it wont affect normal flow ,wtevr v define in normal flow will go below it and this absolute positioned element will  appears above oit
 ..................................................
+commit-4 Pseudo-elements
+
+Pseudo-elements- A pseudo-element is a CSS feature that lets you style a specific part of an element or create a virtual element that doesn't exist in the HTML.
+1.to  Add decorative content such as badges,labels,icons,ribbons
+ ::before and ::after
+
+2.Style part of text
+p::first-letter ,p::first-line 
+
+3. Decorative shapes
+   .card::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background: red;
+}
+
+4. Overlays and effects
+.card {
+  position: relative;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.5);
+}
+
+.........................................................
