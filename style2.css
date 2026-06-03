@@ -2,6 +2,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -30,6 +31,7 @@ body {
   font-weight: bold;
   color: #777;
   margin-bottom: 20px;
+  margin-top: 8px;
 }
 .more-info:hover,
 .more-info:active {
@@ -107,4 +109,35 @@ body {
 }
 .color-brown {
   background-color: brown;
+}
+.price {
+  float: left;
+}
+.shipping {
+  float: right;
+}
+.product-description {
+  clear: both;
+  margin-bottom: 10px;
+}
+.product-info {
+  /* calculation of width; 825-8-250-40=482/2=243 */
+  /* 825 is containers width,8 is border width,250 is image width,40 is margin or gap i need in between elements */
+  width: 243px;
+  float: left;
+  margin-right: 40px;
+  padding-top: 20px;
+}
+.product-details {
+  width: 243px;
+  float: left;
+}
+.product-img {
+  float: left;
+  margin-right: 40px;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
 }
