@@ -67,6 +67,7 @@ h1 {
 h2 {
   font-size: 40px;
   margin-bottom: 30px;
+  position: relative;
 }
 p {
   font-size: 22px;
@@ -170,4 +171,18 @@ body {
   font-family: sans-serif;
   color: #444;
   position: relative;
+}
+
+/* # pseudo-element  */
+h2::after {
+  content: "TOP";
+  font-size: 16px;
+  position: absolute;
+  top: -10px;
+  right: -25px;
+  background-color: yellow;
+  color: black;
+  display: inline-block;
+  padding: 5px 10px;
+  font-weight: bold;
 }
