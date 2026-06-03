@@ -87,3 +87,18 @@ p::first-letter ,p::first-line
 }
 
 .........................................................
+Commit -5 floats 
+
+By default browser will be content box ,for good building we should use box-sizing:border-box;
+In border box , width will not seperately add border ,padding ,width ,its just width include all
+three ways of building layout float ,flexbox ,grid
+Float is neither 1D nor 2D.
+
+
+using float:right ,left and clearing floats 
+when float is applied the text will be flowed outside the normal flow like absolute positioning ,remaining elements will just wrap around
+after applying float ,inline or anything will be converted as block level 
+The clear:both property is intended for block-level elements
+
+...........................................................
+commit-6 
