@@ -138,3 +138,75 @@ if we give- flex-basis: 200px in flex-container, it is just a recommendatio widt
 flex-grow:1 , will equally divide the flex-items in flex container ,if we make it 0 then it will take only necessary space
 
 .........................................................
+
+commit-7
+
+GRID
+
+Properties for Grid Container
+
+display:grid
+grid-template-columns:20px 20px 43px 43px;
+grid-template-rows:30px 30px;
+gap:30px or column-gap / row-gap
+justify-items 
+align-items
+justify-content
+align-content
+
+Properties for Grid Items
+
+grid-column
+grid-row
+
+justify-self
+align-self
+this both are used to override justify-item and align-item ,imagine we define justify-item: center to all elements and only one element needs to override it and make justify-self:end
+
+| Property          | Applies To | Moves What?                      |
+| ----------------- | ---------- | -------------------------------- |
+| `justify-content` | Container  | Entire group on main/inline axis |
+| `align-content`   | Container  | Entire group on cross/block axis |
+| `justify-items`   | Container  | All items inside their cells     |
+| `align-items`     | Container  | All items inside their cells     |
+| `justify-self`    | Item       | One item inside its cell         |
+| `align-self`      | Item       | One item inside its cell         |
+
+
+grid lines (number 1,2,3 - horizontal and vertical)
+grid track or each column 
+grid track or each row
+gutters(gap)
+grid cell(might be filled with grid item or not)
+
+While defining , '
+way 1
+grid-template-columns:20px 20px 43px 43px;
+grid-template-rows:30px 30px; 
+
+way2
+grid-template-columns:1fr 1fr 1fr 1fr;
+grid-template-rows:1fr 1fr; 
+In above ,all items ocuupies same space 
+
+way3
+grid-template-columns:1fr 1fr 1fr auto;
+grid-template-rows:1fr 1fr; 
+auto will make that column to take exact space required by that item
+
+way4
+grid-template-column:repeat(4,1fr); equal to 1fr 1fr 1fr 1fr
+
+To place item to particular cell
+
+grid-coumn: 2/3;
+grid-row:1/2;
+
+if we wanna span then
+grid-column: 1/span3 
+
+if we wanna span till exact end then
+grid-column: 1/-1
+
+
+
