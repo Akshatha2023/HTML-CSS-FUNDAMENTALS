@@ -102,3 +102,39 @@ The clear:both property is intended for block-level elements
 
 ...........................................................
 commit-6 
+
+FLEXBOX
+
+Default values 
+Flex Container Properties...
+
+| Property          | Default Value |
+| ----------------- | ------------- |
+| `flex-direction`  | `row`         |
+| `flex-wrap`       | `nowrap`      |
+| `justify-content` | `flex-start`  |
+| `align-items`     | `stretch`     |
+| `align-content`   | `stretch`     |
+
+Flex Item Properties
+
+
+Property 	Default
+order     	0
+flex-grow	0
+flex-shrink	1
+flex-basis	auto
+align-self	auto
+
+order - -1 to make left first one ,if we wanna put another left to it then -2 ,right last one shld be 1 ,if we wanna put one extra element next to it is 2 
+margin was not good enough to make space betwn flex-items so thy invented gap
+
+defaults of flex property
+flex-grow:0;
+flex-shrink:1;
+flex-basis:auto;
+
+if we give- flex-basis: 200px in flex-container, it is just a recommendatio width ,its not exact width ,if there is enough space then it will be 200 ,if not it will be below 200 ,coz by automatically flex container shrink coz by default shrink will be 1 ,if we make it to 0 then it will be 200px and items overflow flex container 
+flex-grow:1 , will equally divide the flex-items in flex container ,if we make it 0 then it will take only necessary space
+
+.........................................................
