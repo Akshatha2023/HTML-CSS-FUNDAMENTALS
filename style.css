@@ -46,7 +46,7 @@ nav a:link {
   display: block; */
 
   margin-right: 30px;
-  margin-top: 10px;
+  /* margin-top: 10px; */
   display: inline-block;
 }
 nav a:last-child {
@@ -113,11 +113,20 @@ article header p {
 }
 .related-author {
   font-size: 18px;
-  font-weight: bold;
+  font-weight: normal;
+  margin-bottom: 0;
+  font-style: italic;
 }
 .related {
   list-style: none;
   margin-left: 0;
+}
+.related-link:link {
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  display: block;
+  margin-bottom: 5px;
 }
 aside {
   background-color: #f7f7f7;
@@ -188,8 +197,9 @@ h2::after {
   padding: 5px 10px;
   font-weight: bold;
 }
+
 /* #floats */
-.author-img {
+/* .author-img {
   float: left;
 }
 .author {
@@ -202,9 +212,9 @@ h1 {
 }
 nav {
   float: right;
-}
+} */
 /* instead of adding empty div and giving clear float below one is best way */
-.clear-fix::after {
+/* .clear-fix::after {
   content: "";
   clear: both;
   display: block;
@@ -219,4 +229,35 @@ aside {
 }
 footer {
   clear: both;
+} */
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.author-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.author {
+  margin-bottom: 0;
+  margin-left: 15px;
+}
+.related-post {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+.row {
+  display: flex;
+  gap: 75px;
+  margin-bottom: 60px;
+  align-items: flex-start;
+}
+.article {
+  flex: 1;
+  margin-bottom: 0;
 }
