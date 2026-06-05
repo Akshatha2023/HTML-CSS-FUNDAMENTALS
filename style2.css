@@ -14,6 +14,9 @@ body {
   width: 825px;
   margin: 50px auto;
   position: relative;
+  display: grid;
+  grid-template-columns: 250px 1fr 1fr;
+  gap: 40px;
 }
 .product-title {
   text-align: center;
@@ -21,6 +24,7 @@ body {
   text-transform: uppercase;
   background-color: #f7f7f7;
   padding: 15px;
+  grid-column: 1/-1;
 }
 .price {
   font-size: 24px;
@@ -66,6 +70,7 @@ body {
   width: 100%;
   text-transform: uppercase;
   border-top: 4px solid black;
+  grid-column: 1/-1;
 }
 .add-to-cart:hover {
   color: #000;
@@ -135,10 +140,11 @@ body {
   align-items: center;
   margin-bottom: 20px;
 }
-.container {
+/* .container {
   display: flex;
   gap: 40px;
-}
+} */
+
 .product-details {
   flex: 1;
 }
